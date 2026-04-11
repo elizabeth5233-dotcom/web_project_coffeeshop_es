@@ -55,7 +55,66 @@
         </p>
       </div>
     </header>
-    <main class="content"></main>
-    <footer class="footer"></footer>
+    <main class="content">
+      <section>
+        <h2 class="reservation">Reservar una mesa</h2>
+        <form>
+          <label for="name" class="form__label">Nombre</label>
+          <input
+            type="text"
+            id="name"
+            class="form__input"
+            placeholder="Nombre"
+          />
+          <label for="comensales" class="form__label"
+            >Número de comensales</label
+          >
+          <input
+            type="number"
+            id="comensales"
+            min="1"
+            max="8"
+            class="form__input"
+            placeholder="1-8"
+          />
+          <label for="date" class="form__label">Fecha y hora</label>
+          <input type="datetime-local" id="date" class="form__input" />
+          <label for="correo" class="form__label">Tu correo electrónico</label>
+          <input
+            type="email"
+            id="correo"
+            class="form__input"
+            placeholder="email@email.com"
+          />
+          <button type="submit">Reservar una mesa</button>
+          <label class="form__label">
+            <input type="checkbox" class="form__checkbox" />
+            Acepto los términos y condiciones
+          </label>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <img  src=images/logo_coffeeshop_light.svg alt="logo_coffeeshop_light" class="div__logo_light">
+      <div class="circle"></div>
+      <div class="socials__container">
+        <h3 class="socials__title">Redes sociales</h3>
+        <ul>
+          <li>
+            <a href="Facebook">
+              <img src="images/facebook_white.svg" alt="facebook_white">
+              Facebook
+            </a>
+          </li>
+          <li>
+            <a href="Instagram">
+              <img src="images/instagram_white.svg" alt="instagram_white">
+              Instagram
+            </a>
+          </li>
+        </ul>
+      </div>
+      <p class="copyright">&copy; 2026 Gabriela E Puente</p>
+    </footer>
   </body>
 </html>
