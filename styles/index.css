@@ -17,6 +17,7 @@ body {
   min-height: 720px;
   max-height: 800px;
 }
+
 .nav-logo {
   position: relative;
   left: 30px;
@@ -108,4 +109,81 @@ header span {
   position: absolute;
   bottom: 40px;
   right: 80px;
+}
+.content {
+  display: flex;
+  background-color: #ffd6c5;
+  background-image: url(/images/background_reservation.svg);
+  justify-content: center;
+}
+.reservation {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 80px;
+  font-family: "inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+}
+.form {
+  max-width: 385px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+}
+.form__label {
+  font-family: "inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  align-self: left;
+}
+.form__input {
+  display: flex;
+  height: 60px;
+  width: 365px;
+  margin-bottom: 26px;
+  border-radius: 4px;
+}
+.submit {
+  background-color: #e96e3a;
+  font-family: "inter", Arial, sans-serif;
+  color: #ffffff;
+  font-style: "normal";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  height: 60px;
+  width: 385px;
+  border: none;
+  border-radius: 4px;
+}
+.label__checkbox {
+  display: flex;
+  margin-top: 32px;
+  margin-bottom: 120px;
+  align-self: center;
+  gap: 12px;
+}
+.form__checkbox {
+  height: 20px;
+  width: 20px;
+  border-radius: 2px;
+  border: solid #ccc;
+  background-color: #ffffff;
+  appearance: none;
+}
+.form__checkbox:checked {
+  display: flex;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #e96e3a;
+  background-image: url("/images/check.svg");
+}
+
+.footer {
 }
